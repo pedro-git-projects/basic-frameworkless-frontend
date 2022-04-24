@@ -1,84 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-	<meta charset="UTF-8">
-	<title>A linguagem básica da web: HTML </title>
-</head>
-<body>
-	<!-- cada página deve ter APENAS UMA tag h1 -->
-	<h1>&#128218; Folha da Programação </h1>
-	<a href="blog.html">Blog</a>
-	<a href="#">Desafios</a>
-	<a href="#">Flexbox</a>
-	<a href="#">CSS-Grid</a>
+	<head>
+		<meta charset="UTF-8">
+		<title>A linguagem básica da web: HTML </title>
+	</head>
+	<body>
+		<!-- agrupando o cabecalho com a tag header -->
+		<header>		
+			<!-- cada página deve ter APENAS UMA tag h1 -->
+			<h1>&#128218; Folha da Programação </h1>
 
-	<h2> A linguagem básica da web: HTML</h2>
-	<img 
+			<!-- agrupando os links de navegacao com a tag nav -->
+			<nav>	
+				<a href="blog.html">Blog</a>
+				<a href="#">Desafios</a>
+				<a href="#">Flexbox</a>
+				<a href="#">CSS-Grid</a>
+			</nav>
+		</header>
+
+		<!-- article representa um objeto -->
+		<article>
+			<!-- agrupando o cabecalho do post atraves de um header -->
+			<header>			
+				<h2> A linguagem básica da web: HTML</h2>
+				<img 
 		src="./static/enterprise.jpg" 
-		alt="autor" 
-		height="50" 
-		width="50"
-	>
-	<!-- devemos utilizar o elemento strong ao invés de b -->
-	<p>Postado por <strong>Pedro Pereira</strong>, Domingo, 24 de abril de 2022</p>
-	<img 
-		src="./static/programming_languages_to_learn_during_lockdown_banner.png" 
-		alt="banner" 
-		width="424" 
-		height="224"
-		>
+  alt="autor" 
+  height="50" 
+  width="50"
+  >
+  <!-- devemos utilizar o elemento strong ao invés de b -->
+  <p>Postado por <strong>Pedro Pereira</strong>, Domingo, 24 de abril de 2022</p>
+  <img 
+	  src="./static/programming_languages_to_learn_during_lockdown_banner.png" 
+   alt="banner" 
+   width="424" 
+   height="224"
+   >
+			</header>
 
-	<!-- src é um atributo que utilizamos para especificar uma imagem -->
-	<!-- é uma boa prática utilizar o atributo alt -->
-	
-	<!-- devemos utilizar em no lugar de i para italico -->
-	<p> 
-		Você não <em>precisa</em> saber o que são, nem para que servem um motor, nem um processador, para utilizar um carro ou um computador. Assim é com quase tudo em nossas vidas e, portanto, não é diferente com o HTML.
-	</p>
+			<!-- src é um atributo que utilizamos para especificar uma imagem -->
+			<!-- é uma boa prática utilizar o atributo alt -->
 
-	<p> 
-		É provável até que se você não seja alguém que trabalhe com criação de sites, nunca tenha que saber o que é HTML, mas da mesma forma que um proprietário de automóvel e de um computador, não necessariamente precisa ser também um mecânico ou técnico de computadores, pode ser desejável saber o que é HTML, para que serve e porque é tão importante.
-	</p>
+			<!-- devemos utilizar em no lugar de i para italico -->
+			<p> 
+				Você não <em>precisa</em> saber o que são, nem para que servem um motor, nem um processador, para utilizar um carro ou um computador. Assim é com quase tudo em nossas vidas e, portanto, não é diferente com o HTML.
+			</p>
 
-	<h3>O que é HTML?</h3>
-	<p> 
-		HTML (abreviação para a expressão inglesa <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
-	</p>
-	<p>
-		The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.
-	</p>
+			<p> 
+				É provável até que se você não seja alguém que trabalhe com criação de sites, nunca tenha que saber o que é HTML, mas da mesma forma que um proprietário de automóvel e de um computador, não necessariamente precisa ser também um mecânico ou técnico de computadores, pode ser desejável saber o que é HTML, para que serve e porque é tão importante.
+			</p>
 
-	<p>
-		Elementos html tm três partes:
-		<!-- lista ordenada (ordered-list) -->
-		<ol>
-			<li>Tag de abertura</li>
-			<li>Tag de fechamento</li>
-			<li>O elemento em si</li>
-		</ol>
-	</p>
+			<h3>O que é HTML?</h3>
+			<p> 
+				HTML (abreviação para a expressão inglesa <strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage, que significa: "Linguagem de Marcação de Hipertexto" é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. A tecnologia é fruto da junção entre os padrões HyTime e SGML.
+			</p>
+			<p>
+				The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991. It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.
+			</p>
 
-	<h3>Por que aprender HTML?</h3>
-	<!-- lista não ordenada (unordered-list) -->
-	<ul>
-		<li>Importante</li>
-		<li>Fácil</li>
-		<li>Lorem Ipsum</li>
-	</ul>
-	<!-- taget="blank_" abre o link em outra guia -->	
-	<p>
-		Aprenda em <a 
-			href="https://developer.mozilla.org/en-US/"
-			target="_blank">MDN WebDocs</a>
-	</p>
+			<p>
+				Elementos html tm três partes:
+				<!-- lista ordenada (ordered-list) -->
+				<ol>
+					<li>Tag de abertura</li>
+					<li>Tag de fechamento</li>
+					<li>O elemento em si</li>
+				</ol>
+			</p>
 
-</body>
+			<h3>Por que aprender HTML?</h3>
+			<!-- lista não ordenada (unordered-list) -->
+			<ul>
+				<li>Importante</li>
+				<li>Fácil</li>
+				<li>Lorem Ipsum</li>
+			</ul>
+			<!-- taget="blank_" abre o link em outra guia -->	
+			<p>
+				Aprenda em <a 
+				   href="https://developer.mozilla.org/en-US/"
+	   target="_blank">MDN WebDocs</a>
+			</p>
+		</article>
+
+		<footer>
+			Copyright&copy; 2022 Pedro Pereira
+		</footer>
+	</body>
 </html>
 
-	<!-- <h2>The basic language of the Web: HTML</h2> -->	
-	<!-- <h3>The basic language of the Web: HTML</h3> -->	
-	<!-- <h4>The basic language of the Web: HTML</h4> -->	
-	<!-- <h5>The basic language of the Web: HTML</h5> -->	
-	<!-- <h6>The basic language of the Web: HTML</h6> -->	
+<!-- <h2>The basic language of the Web: HTML</h2> -->	
+<!-- <h3>The basic language of the Web: HTML</h3> -->	
+<!-- <h4>The basic language of the Web: HTML</h4> -->	
+<!-- <h5>The basic language of the Web: HTML</h5> -->	
+<!-- <h6>The basic language of the Web: HTML</h6> -->	
 
 
